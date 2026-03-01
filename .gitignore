@@ -1,0 +1,20 @@
+# secrets
+.env
+*.key
+*.secret
+**/api_key
+**/api_token
+
+# runtime outputs
+runs/
+tmp/
+*.log
+
+# node/python
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# mac
+.DS_Store
