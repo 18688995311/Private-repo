@@ -16,6 +16,18 @@ git commit -m "简短描述你改了什么"
 git push
 ```
 
+## 自动备份（文件变动自动提交）
+
+启动监听（后台持续运行，改完脚本秒提交）：
+```bash
+bash /Users/javis/Workspace/openclaw_ops/scripts/auto-git-watch.sh
+```
+
+- 监听范围：`scripts/` 目录
+- 触发条件：文件有改动即自动 `add → commit → push`
+- commit 信息格式：`auto: scripts updated @ 2026-03-01 14:30:00`
+- 停止：`Ctrl+C`
+
 ## 常用 git 操作
 
 ```bash
