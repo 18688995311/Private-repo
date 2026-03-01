@@ -13,6 +13,7 @@ tmp/
 # node/python
 node_modules/
 .venv/
+.venv-tgb/
 __pycache__/
 *.pyc
 

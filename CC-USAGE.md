@@ -16,6 +16,29 @@ git commit -m "简短描述你改了什么"
 git push
 ```
 
+## TGB 脚本运行环境
+
+固定 venv 路径（Python 3.11，含 paddle + paddleocr）：
+```
+/Users/javis/Workspace/openclaw_ops/.venv-tgb
+```
+
+激活方式：
+```bash
+source /Users/javis/Workspace/openclaw_ops/.venv-tgb/bin/activate
+```
+
+运行 tgb 脚本（需要传 JOB 环境变量）：
+```bash
+source /Users/javis/Workspace/openclaw_ops/.venv-tgb/bin/activate
+JOB=/tmp/tgb_job_xxx python ocr_all_text.py
+```
+
+> 所有 tgb job 共用这一个 venv，不需要每次重装依赖。
+> 如需重建：`/opt/homebrew/bin/python3.11 -m venv .venv-tgb && pip install paddlepaddle paddleocr pytesseract pillow`
+
+---
+
 ## 自动备份（文件变动自动提交）
 
 启动监听（后台持续运行，改完脚本秒提交）：
