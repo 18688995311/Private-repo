@@ -2,6 +2,12 @@
 
 ## 日常提交流程
 
+一条命令搞定：
+```bash
+git add -A && git commit -m "你的描述" && git push
+```
+
+或者分步执行：
 ```bash
 cd /Users/javis/Workspace/openclaw_ops
 
